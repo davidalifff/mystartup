@@ -12,14 +12,10 @@
       href="{{asset('images/favicon.png')}}"
       type="image/x-icon"
     />
-
     <link rel="stylesheet" href="{{asset('css/app.css')}}" />
 
     <!-- ==== WOW JS ==== -->
     <script src="{{mix('js/app.js')}}"></script>
-    <script>
-      new WOW().init();
-    </script>
   </head>
   <body>
     <!-- ====== Navbar Section Start -->
@@ -41,9 +37,8 @@
           <div class="px-4 w-60 max-w-full">
             <a href="index.html" class="navbar-logo w-full block py-5">
               <img
-                src="assets/images/logo/logo-white.svg"
+                src="{{asset('images/logo/logo-white.svg')}}"
                 alt="logo"
-                class="w-full header-logo"
               />
             </a>
           </div>
@@ -511,7 +506,7 @@
               </ul>
               <div class="text-center wow fadeInUp" data-wow-delay=".3s">
                 <img
-                  src="assets/images/hero/brand.svg"
+                  src="{{asset('images/hero/brand.svg')}}"
                   alt="image"
                   class="
                     max-w-[250px]
@@ -535,7 +530,7 @@
             >
               <div class="mt-16">
                 <img
-                  src="assets/images/hero/hero-image.jpg"
+                  src="{{asset('images/hero/hero-image.jpg')}}"
                   alt="hero"
                   class="max-w-full mx-auto rounded-t-xl rounded-tr-xl"
                 />
@@ -2089,7 +2084,7 @@
                 <div class="text-center">
                   <div class="relative inline-block z-10">
                     <img
-                      src="assets/images/about/about-image.svg"
+                      src="{{asset('images/about/about-image.svg')}}"
                       alt="image"
                       class="mx-auto lg:ml-auto"
                     />
@@ -3112,7 +3107,7 @@
                   "
                 >
                   <img
-                    src="assets/images/testimonials/author-01.png"
+                    src="{{asset('images/testimonials/author-01.png')}}"
                     alt="author"
                   />
                 </div>
@@ -3217,7 +3212,7 @@
                   "
                 >
                   <img
-                    src="assets/images/testimonials/author-02.png"
+                    src="{{asset('images/testimonials/author-02.png')}}"
                     alt="author"
                   />
                 </div>
@@ -3322,7 +3317,7 @@
                   "
                 >
                   <img
-                    src="assets/images/testimonials/author-03.png"
+                    src="{{asset('images/testimonials/author-03.png')}}"
                     alt="author"
                   />
                 </div>
@@ -3361,7 +3356,7 @@
                     rel="nofollow noopner"
                   >
                     <img
-                      src="assets/images/brands/tailgrids.svg"
+                      src="{{asset('images/brands/tailgrids.svg')}}"
                       alt="tailgrids"
                       class="grayscale hover:filter-none duration-300"
                     />
@@ -3374,7 +3369,7 @@
                     rel="nofollow noopner"
                   >
                     <img
-                      src="assets/images/brands/ayroui.svg"
+                      src="{{asset('images/brands/ayroui.svg')}}"
                       alt="ayroui"
                       class="grayscale hover:filter-none duration-300"
                     />
@@ -3387,7 +3382,7 @@
                     rel="nofollow noopner"
                   >
                     <img
-                      src="assets/images/brands/uideck.svg"
+                      src="{{asset('images/brands/uideck.svg')}}"
                       alt="uideck"
                       class="grayscale hover:filter-none duration-300"
                     />
@@ -3400,7 +3395,7 @@
                     rel="nofollow noopner"
                   >
                     <img
-                      src="assets/images/brands/graygrids.svg"
+                      src="{{asset('images/brands/graygrids.svg')}}"
                       alt="graygrids"
                       class="grayscale hover:filter-none duration-300"
                     />
@@ -3413,7 +3408,7 @@
                     rel="nofollow noopner"
                   >
                     <img
-                      src="assets/images/brands/lineicons.svg"
+                      src="{{asset('images/brands/lineicons.svg')}}"
                       alt="lineicons"
                       class="grayscale hover:filter-none duration-300"
                     />
@@ -3479,7 +3474,7 @@
                 "
               >
                 <img
-                  src="assets/images/team/team-01.png"
+                  src="{{asset('images/team/team-01.png')}}"
                   alt="image"
                   class="w-full rounded-full"
                 />
@@ -4004,7 +3999,7 @@
                 "
               >
                 <img
-                  src="assets/images/team/team-02.png"
+                  src="{{asset('images/team/team-02.png')}}"
                   alt="image"
                   class="w-full rounded-full"
                 />
@@ -4527,7 +4522,7 @@
                 "
               >
                 <img
-                  src="assets/images/team/team-03.png"
+                  src="{{asset('images/team/team-03.png')}}"
                   alt="image"
                   class="w-full rounded-full"
                 />
@@ -5052,7 +5047,7 @@
                 "
               >
                 <img
-                  src="assets/images/team/team-01.png"
+                  src="{{asset('images/team/team-01.png')}}"
                   alt="image"
                   class="w-full rounded-full"
                 />
@@ -5777,7 +5772,7 @@
                 class="inline-block max-w-[160px] mb-6"
               >
                 <img
-                  src="assets/images/logo/logo-white.svg"
+                  src="{{asset('images/logo/logo-white.svg')}}"
                   alt="logo"
                   class="max-w-full"
                 />
@@ -6066,7 +6061,7 @@
                     "
                   >
                     <img
-                      src="assets/images/footer/brands/tailgrids.svg"
+                      src="{{asset('images/footer/brands/tailgrids.svg')}}"
                       alt="tailgrids"
                     />
                   </a>
@@ -6086,7 +6081,7 @@
                     "
                   >
                     <img
-                      src="assets/images/footer/brands/ayroui.svg"
+                      src="{{asset('images/footer/brands/ayroui.svg')}}"
                       alt="ayroui"
                     />
                   </a>
@@ -6106,7 +6101,7 @@
                     "
                   >
                     <img
-                      src="assets/images/footer/brands/ecommerce-html.svg"
+                      src="{{asset('images/footer/brands/ecommerce-html.svg')}}"
                       alt="ecommerce-html"
                     />
                   </a>
@@ -6126,7 +6121,7 @@
                     "
                   >
                     <img
-                      src="assets/images/footer/brands/graygrids.svg"
+                      src="{{asset('images/footer/brands/graygrids.svg')}}"
                       alt="graygrids"
                     />
                   </a>
@@ -6146,7 +6141,7 @@
                     "
                   >
                     <img
-                      src="assets/images/footer/brands/lineicons.svg"
+                      src="{{asset('images/footer/brands/lineicons.svg')}}"
                       alt="lineicons"
                     />
                   </a>
@@ -6166,7 +6161,7 @@
                     "
                   >
                     <img
-                      src="assets/images/footer/brands/uideck.svg"
+                      src="{{asset('images/footer/brands/uideck.svg')}}"
                       alt="uideck"
                     />
                   </a>
@@ -6233,11 +6228,11 @@
 
       <div>
         <span class="absolute left-0 top-0 z-[-1]">
-          <img src="assets/images/footer/shape-1.svg" alt="" />
+          <img src="{{asset('images/footer/shape-1.svg')}}" alt="" />
         </span>
 
         <span class="absolute bottom-0 right-0 z-[-1]">
-          <img src="assets/images/footer/shape-3.svg" alt="" />
+          <img src="{{asset('images/footer/shape-3.svg')}}" alt="" />
         </span>
 
         <span class="absolute top-0 right-0 z-[-1]">
@@ -6532,11 +6527,10 @@
 
     <!-- ====== All Scripts -->
 
-    <script src="assets/js/main.js"></script>
+    <script src="{{asset('js/main.js')}}"></script>
     <script>
       // ==== for menu scroll
       const pageLink = document.querySelectorAll(".ud-menu-scroll");
-
       pageLink.forEach((elem) => {
         elem.addEventListener("click", (e) => {
           e.preventDefault();
@@ -6546,7 +6540,6 @@
           });
         });
       });
-
       // section menu active
       function onScroll(event) {
         const sections = document.querySelectorAll(".ud-menu-scroll");
@@ -6554,7 +6547,6 @@
           window.pageYOffset ||
           document.documentElement.scrollTop ||
           document.body.scrollTop;
-
         for (let i = 0; i < sections.length; i++) {
           const currLink = sections[i];
           const val = currLink.getAttribute("href");
@@ -6573,7 +6565,6 @@
           }
         }
       }
-
       window.document.addEventListener("scroll", onScroll);
     </script>
   </body>

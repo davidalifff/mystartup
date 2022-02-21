@@ -2062,7 +2062,7 @@ module.exports = {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-__webpack_require__(/*! ./main.js */ "./resources/js/main.js");
+__webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module './main.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 __webpack_require__(/*! ./wow.min.js */ "./resources/js/wow.min.js");
 
@@ -2096,110 +2096,6 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
-
-/***/ }),
-
-/***/ "./resources/js/main.js":
-/*!******************************!*\
-  !*** ./resources/js/main.js ***!
-  \******************************/
-/***/ (() => {
-
-(function () {
-  "use strict"; // ======= Sticky
-
-  window.onscroll = function () {
-    var ud_header = document.querySelector(".ud-header");
-    var sticky = ud_header.offsetTop;
-    var logo = document.querySelector(".header-logo");
-
-    if (window.pageYOffset > sticky) {
-      ud_header.classList.add("sticky");
-    } else {
-      ud_header.classList.remove("sticky");
-    } // === logo change
-
-
-    if (ud_header.classList.contains("sticky")) {
-      logo.src = "assets/images/logo/logo.svg";
-    } else {
-      logo.src = "assets/images/logo/logo-white.svg";
-    } // show or hide the back-top-top button
-
-
-    var backToTop = document.querySelector(".back-to-top");
-
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      backToTop.style.display = "flex";
-    } else {
-      backToTop.style.display = "none";
-    }
-  }; // ===== responsive navbar
-
-
-  var navbarToggler = document.querySelector("#navbarToggler");
-  var navbarCollapse = document.querySelector("#navbarCollapse");
-  navbarToggler.addEventListener("click", function () {
-    navbarToggler.classList.toggle("navbarTogglerActive");
-    navbarCollapse.classList.toggle("hidden");
-  }); //===== close navbar-collapse when a  clicked
-
-  document.querySelectorAll("#navbarCollapse ul li:not(.submenu-item) a").forEach(function (e) {
-    return e.addEventListener("click", function () {
-      navbarToggler.classList.remove("navbarTogglerActive");
-      navbarCollapse.classList.add("hidden");
-    });
-  }); // ===== Sub-menu
-
-  var submenuItems = document.querySelectorAll(".submenu-item");
-  submenuItems.forEach(function (el) {
-    el.querySelector("a").addEventListener("click", function () {
-      el.querySelector(".submenu").classList.toggle("hidden");
-    });
-  }); // ===== Faq accordion
-
-  var faqs = document.querySelectorAll(".single-faq");
-  faqs.forEach(function (el) {
-    el.querySelector(".faq-btn").addEventListener("click", function () {
-      el.querySelector(".icon").classList.toggle("rotate-180");
-      el.querySelector(".faq-content").classList.toggle("hidden");
-    });
-  }); // ===== wow js
-
-  new WOW().init(); // ====== scroll top js
-
-  function scrollTo(element) {
-    var to = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-    var duration = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 500;
-    var start = element.scrollTop;
-    var change = to - start;
-    var increment = 20;
-    var currentTime = 0;
-
-    var animateScroll = function animateScroll() {
-      currentTime += increment;
-      var val = Math.easeInOutQuad(currentTime, start, change, duration);
-      element.scrollTop = val;
-
-      if (currentTime < duration) {
-        setTimeout(animateScroll, increment);
-      }
-    };
-
-    animateScroll();
-  }
-
-  Math.easeInOutQuad = function (t, b, c, d) {
-    t /= d / 2;
-    if (t < 1) return c / 2 * t * t + b;
-    t--;
-    return -c / 2 * (t * (t - 2) - 1) + b;
-  };
-
-  document.querySelector(".back-to-top").onclick = function () {
-    scrollTo(document.documentElement);
-  };
-})();
 
 /***/ }),
 
@@ -19776,12 +19672,9 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 /*!*******************************!*\
   !*** ./resources/css/app.css ***!
   \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
+throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/css-loader/dist/cjs.js):\nError: Can't resolve 'animate.css' in '/Users/mac/mystartup/resources/css'\n    at finishWithoutResolve (/Users/mac/mystartup/node_modules/enhanced-resolve/lib/Resolver.js:304:18)\n    at /Users/mac/mystartup/node_modules/enhanced-resolve/lib/Resolver.js:381:15\n    at /Users/mac/mystartup/node_modules/enhanced-resolve/lib/Resolver.js:430:5\n    at eval (eval at create (/Users/mac/mystartup/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)\n    at /Users/mac/mystartup/node_modules/enhanced-resolve/lib/Resolver.js:430:5\n    at eval (eval at create (/Users/mac/mystartup/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:27:1)\n    at /Users/mac/mystartup/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43\n    at /Users/mac/mystartup/node_modules/enhanced-resolve/lib/Resolver.js:430:5\n    at eval (eval at create (/Users/mac/mystartup/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at /Users/mac/mystartup/node_modules/enhanced-resolve/lib/Resolver.js:430:5\n    at processResult (/Users/mac/mystartup/node_modules/webpack/lib/NormalModule.js:753:19)\n    at /Users/mac/mystartup/node_modules/webpack/lib/NormalModule.js:855:5\n    at /Users/mac/mystartup/node_modules/loader-runner/lib/LoaderRunner.js:399:11\n    at /Users/mac/mystartup/node_modules/loader-runner/lib/LoaderRunner.js:251:18\n    at context.callback (/Users/mac/mystartup/node_modules/loader-runner/lib/LoaderRunner.js:124:13)\n    at Object.loader (/Users/mac/mystartup/node_modules/css-loader/dist/index.js:155:5)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)");
 
 /***/ }),
 
@@ -20019,42 +19912,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = __webpack_modules__;
-/******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/chunk loaded */
-/******/ 	(() => {
-/******/ 		var deferred = [];
-/******/ 		__webpack_require__.O = (result, chunkIds, fn, priority) => {
-/******/ 			if(chunkIds) {
-/******/ 				priority = priority || 0;
-/******/ 				for(var i = deferred.length; i > 0 && deferred[i - 1][2] > priority; i--) deferred[i] = deferred[i - 1];
-/******/ 				deferred[i] = [chunkIds, fn, priority];
-/******/ 				return;
-/******/ 			}
-/******/ 			var notFulfilled = Infinity;
-/******/ 			for (var i = 0; i < deferred.length; i++) {
-/******/ 				var [chunkIds, fn, priority] = deferred[i];
-/******/ 				var fulfilled = true;
-/******/ 				for (var j = 0; j < chunkIds.length; j++) {
-/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every((key) => (__webpack_require__.O[key](chunkIds[j])))) {
-/******/ 						chunkIds.splice(j--, 1);
-/******/ 					} else {
-/******/ 						fulfilled = false;
-/******/ 						if(priority < notFulfilled) notFulfilled = priority;
-/******/ 					}
-/******/ 				}
-/******/ 				if(fulfilled) {
-/******/ 					deferred.splice(i--, 1)
-/******/ 					var r = fn();
-/******/ 					if (r !== undefined) result = r;
-/******/ 				}
-/******/ 			}
-/******/ 			return result;
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/global */
 /******/ 	(() => {
 /******/ 		__webpack_require__.g = (function() {
@@ -20067,22 +19925,6 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		})();
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/node module decorator */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nmd = (module) => {
@@ -20092,68 +19934,13 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/jsonp chunk loading */
-/******/ 	(() => {
-/******/ 		// no baseURI
-/******/ 		
-/******/ 		// object to store loaded and loading chunks
-/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
-/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
-/******/ 		var installedChunks = {
-/******/ 			"/js/app": 0,
-/******/ 			"css/app": 0
-/******/ 		};
-/******/ 		
-/******/ 		// no chunk on demand loading
-/******/ 		
-/******/ 		// no prefetching
-/******/ 		
-/******/ 		// no preloaded
-/******/ 		
-/******/ 		// no HMR
-/******/ 		
-/******/ 		// no HMR manifest
-/******/ 		
-/******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
-/******/ 		
-/******/ 		// install a JSONP callback for chunk loading
-/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
-/******/ 			var [chunkIds, moreModules, runtime] = data;
-/******/ 			// add "moreModules" to the modules object,
-/******/ 			// then flag all "chunkIds" as loaded and fire callback
-/******/ 			var moduleId, chunkId, i = 0;
-/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
-/******/ 				for(moduleId in moreModules) {
-/******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
-/******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
-/******/ 					}
-/******/ 				}
-/******/ 				if(runtime) var result = runtime(__webpack_require__);
-/******/ 			}
-/******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
-/******/ 			for(;i < chunkIds.length; i++) {
-/******/ 				chunkId = chunkIds[i];
-/******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
-/******/ 					installedChunks[chunkId][0]();
-/******/ 				}
-/******/ 				installedChunks[chunkId] = 0;
-/******/ 			}
-/******/ 			return __webpack_require__.O(result);
-/******/ 		}
-/******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunk"] = self["webpackChunk"] || [];
-/******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
-/******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
-/******/ 	})();
-/******/ 	
 /************************************************************************/
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/css/app.css")))
-/******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
+/******/ 	__webpack_require__("./resources/js/app.js");
+/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
+/******/ 	var __webpack_exports__ = __webpack_require__("./resources/css/app.css");
 /******/ 	
 /******/ })()
 ;
