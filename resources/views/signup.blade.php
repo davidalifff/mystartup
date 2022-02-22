@@ -7,14 +7,14 @@
     <title>Sign Up | Play Tailwind</title>
     <link
       rel="shortcut icon"
-      href="assets/images/favicon.png"
+      href="{{asset('images/logo/favicon.svg')}}"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <link rel="stylesheet" href="{{asset('css/animate.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/tailwind.css')}}" />
 
     <!-- ==== WOW JS ==== -->
-    <script src="assets/js/wow.min.js"></script>
+    <script src="{{asset('js/wow.min.js')}}"></script>
     <script>
       new WOW().init();
     </script>
@@ -37,11 +37,11 @@
       <div class="container">
         <div class="flex -mx-4 items-center justify-between relative">
           <div class="px-4 w-60 max-w-full">
-            <a href="index.html" class="navbar-logo w-full block py-5">
+            <a href="welcome" class="navbar-logo w-full block py-5">
               <img
-                src="assets/images/logo/logo-white.svg"
-                alt="logo"
-                class="w-full header-logo"
+                    src="{{asset('images/logo/logo-white.svg')}}"
+                    alt="logo"
+                    class="w-full header-logo"
               />
             </a>
           </div>
@@ -252,7 +252,7 @@
                       "
                     >
                       <a
-                        href="about.html"
+                        href="about"
                         class="
                           block
                           text-sm text-body-color
@@ -265,7 +265,7 @@
                         About Page
                       </a>
                       <a
-                        href="pricing.html"
+                        href="pricing"
                         class="
                           block
                           text-sm text-body-color
@@ -278,7 +278,7 @@
                         Pricing Page
                       </a>
                       <a
-                        href="contact.html"
+                        href="contact"
                         class="
                           block
                           text-sm text-body-color
@@ -291,7 +291,7 @@
                         Contact Page
                       </a>
                       <a
-                        href="blog-grids.html"
+                        href="blog-grids"
                         class="
                           block
                           text-sm text-body-color
@@ -304,7 +304,7 @@
                         Blog Grid Page
                       </a>
                       <a
-                        href="blog-details.html"
+                        href="blog-details"
                         class="
                           block
                           text-sm text-body-color
@@ -317,7 +317,7 @@
                         Blog Details Page
                       </a>
                       <a
-                        href="signup.html"
+                        href="signup"
                         class="
                           block
                           text-sm text-body-color
@@ -330,7 +330,7 @@
                         Sign Up Page
                       </a>
                       <a
-                        href="signin.html"
+                        href="signin"
                         class="
                           block
                           text-sm text-body-color
@@ -343,7 +343,7 @@
                         Sign In Page
                       </a>
                       <a
-                        href="404.html"
+                        href="404"
                         class="
                           block
                           text-sm text-body-color
@@ -362,7 +362,7 @@
             </div>
             <div class="sm:flex justify-end hidden pr-16 lg:pr-0">
               <a
-                href="signin.html"
+                href="signin"
                 class="
                   text-base
                   font-medium
@@ -376,7 +376,7 @@
                 Sign In
               </a>
               <a
-                href="signup.html"
+                href="signup"
                 class="
                   text-base
                   font-medium
@@ -518,7 +518,7 @@
                   href="javascript:void(0)"
                   class="inline-block max-w-[160px] mx-auto"
                 >
-                  <img src="assets/images/logo/logo.svg" alt="logo" />
+                    <img src="{{asset('images/logo/logo.svg')}}" alt="logo" />
                 </a>
               </div>
               <form>
@@ -714,7 +714,7 @@
 
               <p class="text-base text-[#adadad]">
                 Already have an account?
-                <a href="signin.html" class="text-primary hover:underline">
+                <a href="signin" class="text-primary hover:underline">
                   Sign In
                 </a>
               </p>
@@ -945,7 +945,7 @@
     <!-- ====== Forms Section End -->
 
     <!-- ====== Footer Section Start -->
-    <footer
+   <footer
       class="bg-black pt-20 lg:pt-[120px] relative z-10 wow fadeInUp"
       data-wow-delay=".15s"
     >
@@ -954,11 +954,11 @@
           <div class="w-full sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12 px-4">
             <div class="w-full mb-10">
               <a
-                href="javascript:void(0)"
+                href="welcome"
                 class="inline-block max-w-[160px] mb-6"
               >
                 <img
-                  src="assets/images/logo/logo-white.svg"
+                  src="{{asset('images/logo/logo-white.svg')}}"
                   alt="logo"
                   class="max-w-full"
                 />
@@ -1043,7 +1043,7 @@
               <ul>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="/#home"
                     class="
                       inline-block
                       text-base text-[#f3f4fe]
@@ -1071,7 +1071,7 @@
                 </li>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="/#about"
                     class="
                       inline-block
                       text-base text-[#f3f4fe]
@@ -1085,7 +1085,7 @@
                 </li>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="/#testimonials"
                     class="
                       inline-block
                       text-base text-[#f3f4fe]
@@ -1171,7 +1171,7 @@
               <ul>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="https://lineicons.com"
                     class="
                       inline-block
                       text-base text-[#f3f4fe]
@@ -1185,7 +1185,7 @@
                 </li>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="https://ecommercehtml.com"
                     class="
                       inline-block
                       text-base text-[#f3f4fe]
@@ -1199,7 +1199,7 @@
                 </li>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="https://ayroui.com"
                     class="
                       inline-block
                       text-base text-[#f3f4fe]
@@ -1213,7 +1213,7 @@
                 </li>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="https://plainadmin.com"
                     class="
                       inline-block
                       text-base text-[#f3f4fe]
@@ -1247,7 +1247,7 @@
                     "
                   >
                     <img
-                      src="assets/images/footer/brands/tailgrids.svg"
+                      src="{{asset('images/footer/brands/tailgrids.svg')}}"
                       alt="tailgrids"
                     />
                   </a>
@@ -1267,7 +1267,7 @@
                     "
                   >
                     <img
-                      src="assets/images/footer/brands/ayroui.svg"
+                      src="{{asset('images/footer/brands/ayroui.svg')}}"
                       alt="ayroui"
                     />
                   </a>
@@ -1287,7 +1287,7 @@
                     "
                   >
                     <img
-                      src="assets/images/footer/brands/ecommerce-html.svg"
+                      src="{{asset('images/footer/brands/ecommerce-html.svg')}}"
                       alt="ecommerce-html"
                     />
                   </a>
@@ -1307,7 +1307,7 @@
                     "
                   >
                     <img
-                      src="assets/images/footer/brands/graygrids.svg"
+                      src="{{asset('images/footer/brands/graygrids.svg')}}"
                       alt="graygrids"
                     />
                   </a>
@@ -1327,7 +1327,7 @@
                     "
                   >
                     <img
-                      src="assets/images/footer/brands/lineicons.svg"
+                      src="{{asset('images/footer/brands/lineicons.svg')}}"
                       alt="lineicons"
                     />
                   </a>
@@ -1347,7 +1347,7 @@
                     "
                   >
                     <img
-                      src="assets/images/footer/brands/uideck.svg"
+                      src="{{asset('images/footer/brands/uideck.svg')}}"
                       alt="uideck"
                     />
                   </a>
@@ -1414,11 +1414,11 @@
 
       <div>
         <span class="absolute left-0 top-0 z-[-1]">
-          <img src="assets/images/footer/shape-1.svg" alt="" />
+          <img src="{{asset('images/footer/shape-1.svg')}}" alt="" />
         </span>
 
         <span class="absolute bottom-0 right-0 z-[-1]">
-          <img src="assets/images/footer/shape-3.svg" alt="" />
+          <img src="{{asset('images/footer/shape-3.svg')}}" alt="" />
         </span>
 
         <span class="absolute top-0 right-0 z-[-1]">
@@ -1712,6 +1712,6 @@
     <!-- ====== Back To Top End -->
 
     <!-- ====== All Scripts -->
-    <script src="assets/js/main.js"></script>
+    <script src="{{asset('js/main.js')}}"></script>
   </body>
 </html>
